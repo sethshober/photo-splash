@@ -1,0 +1,108 @@
+
+	<div id="picture-main">
+
+		<nav class="menu">
+			<ul class="group">
+				<li><a href="/#/">FullPixel</a></li>
+				<li><a href="/#/#form-signup">Sign Up</a></li>
+				<li><a href="/#/#form-signup">Login</a></li>
+			</ul>
+		</nav>
+
+		<div class="heading-wrapper">
+			<h1 id="main-callout">The site that can finally handle your photos.</h1>
+			<button id="signUp"><a href="/#/#form-signup">Get Started</a></button>
+		</div>
+
+	</div> <!-- end picture main -->
+
+	<div id="callout-text">
+		
+		<h2 id="callout-text-heading">The Premiere Photo Site</h2>
+		<h3 id="callout-text-body">Your pictures are beautiful. Let everyone know it.</h3>
+
+	</div>
+
+
+	<div id="gallery" class="group">
+    	<img src="pics/beach.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/mountain-lake.jpeg" alt="beach" width="450" height="auto">
+    	<img src="pics/ocean.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/person-cam.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/person.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/beach.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/mountain-lake.jpeg" alt="beach" width="450" height="auto">
+    	<img src="pics/ocean.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/person-cam.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/pier.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/box.jpg" alt="beach" width="450" height="auto">
+    	<img src="pics/rig.jpg" alt="beach" width="450" height="auto">
+
+
+	<!-- <div class="photo">
+			<div class="photo-overlay"></div>
+			<div class="photo-overlay-text">
+				<h2>Beauty</h2>
+				<h2><span>by </span>Seth</h2>
+			</div>
+		</div> -->
+
+	</div>
+
+<!-- 	<div class="bottom-buttons">
+		<button class="button button-blue">Sign up for FullPixel</button>
+		<button class="button button-gray">Explore more photos</button>
+	</div> -->
+
+
+	<div id="signup-form-container">
+
+	<!-- HIDE/SHOW LOGIN SIGNUP -->
+	<!-- SIGNUP -->
+		<div>
+		  <!-- Show: -->
+		  <div class="check-element animate-show" ng-show="checked" ng-controller="LoginCtrl">
+		    
+		    <form ng-submit="login(username, password)" id="form-login">
+	        	<label>Username</label>
+	        	<input class="form-control" type="text" ng-model="username">
+	    	
+	        	<label>Password</label>
+	        	<input class="form-control" type="password" ng-model="password">
+	    
+	    		<input type="submit" value="Login to FullPixel" id="login-submit">
+			</form>
+
+		  </div>
+		</div>
+
+		<div>
+		 <!--  Hide: -->
+		  <div class="check-element animate-show" ng-hide="checked" ng-controller="RegisterCtrl">
+		    
+		    <form ng-submit="register(username, password)" id="form-signup">
+	        	<label>Username</label>
+	        	<input class="form-control" type="text" ng-model="username">
+	    	
+	        	<label>Password</label>
+	        	<input class="form-control" type="password" ng-model="password">
+	    	
+	    		<input type="submit" value="Sign up for FullPixel" id="signup-submit">
+			</form>
+
+		  </div>
+		</div>
+
+		<div id="check-container">
+			<p id="check-title">Already signed up?</p>
+			<input type="checkbox" ng-model="checked" id="login-check">
+		</div>
+
+		<h4 id="not-ready-title">Not ready to signup?</h4>
+		<button class="button button-gray" id="explore-more-button"><a href="">Explore more photos</a></button>
+
+	</div>
+	
+	<footer>FullPixel &hearts;</footer>
+
+
